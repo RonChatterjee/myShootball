@@ -1,3 +1,8 @@
+
+###################
+Import shootball.sql then clone into a folder called "myShootball" and open in browser via localhost/myShootball
+###################
+
 ###################
 Import shootball.sql then clone into a folder called "myShootball" and open in browser via localhost/myShootball
 ###################
