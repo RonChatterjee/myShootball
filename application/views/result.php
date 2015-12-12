@@ -1,3 +1,4 @@
+<!doctype html>
 <html lang="en">
 <head>
     <meta charset="utf-8" />
@@ -30,6 +31,29 @@
             text-transform:uppercase;
         }
 
+        .myButton {
+            background-color:#44c767;
+            -moz-border-radius:17px;
+            -webkit-border-radius:17px;
+            border-radius:17px;
+            border:2px solid #18ab29;
+            display:inline-block;
+            cursor:pointer;
+            color:#ffffff;
+            font-family:Times New Roman;
+            font-size:25px;
+            font-weight:bold;
+            padding:16px 31px;
+            text-decoration:none;
+            text-shadow:0px 1px 0px #2f6627;
+        }
+        .myButton:hover {
+            background-color:#5cbf2a;
+        }
+        .myButton:active {
+            position:relative;
+            top:1px;
+        }
 
         /*** Table Styles **/
 
@@ -262,4 +286,6 @@
     </tr>
     </tbody>
 </table>
+<a href="<?php echo base_url();?>index.php/Winner/index/<?php echo $maxt;?>" class="myButton">And the Winner is ..... </a>
 </body>
+</html>
