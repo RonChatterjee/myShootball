@@ -39,7 +39,7 @@
 
     for($i=1;$i<9;$i++)
     {
-        echo"<div><input type='radio' name='tid' id='$i' class='radio' value='$i'/><label for='$i'>Team $i</label></div></br>";
+        echo"<div><input type='radio' name='tid' id='$i' class='radio' value='$i' required/><label for='$i'>Team $i</label></div></br>";
     }
     ?>
 
@@ -48,7 +48,7 @@
     <p align="center">
         <section class="webdesigntuts-workshop">
             <form action="<?php echo base_url();?>index.php/Buy/index<?php echo $query->row()->id?>" method="POST">
-                <input type="text" name="pri" placeholder="Final Price...">
+                <input type="number" min="<?php echo $query->row()->price; ?>" name="pri" placeholder="Final Price...">
                 <button>Buy Now</button>
             </form>
         </section>
