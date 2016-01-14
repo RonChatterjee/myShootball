@@ -29,8 +29,8 @@
 </head>
 <body>
 <?php
-echo "<h1><div align='center'><font 150% color='#00FF00'>".$query->row()->name."</font></div></h1>";
-echo "<h3><div align='center'><font color='#A7FFE1'> Base Price : ".$query->row()->price."</font></div></h3>";
+    echo "<h1><div align='center'><font 150% color='#00FF00'>" . $query->row()->name . "</font></div></h1>";
+    echo "<h3><div align='center'><font color='#A7FFE1'> Base Price : " . $query->row()->price . "</font></div></h3>";
 ?>
 <h3><font color='#00FF00'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Select the Team</font></h3>
 <p>

@@ -4,7 +4,11 @@
         {
             $player = $this->input->post('player');
             $query = $this->Shootball_model->output($player);
-            $data = array('query' =>$query );
-            $this->load->view("main",$data);
+            if($query->num_rows()==0)
+                $this->load->view("select");
+            else {
+                $data = array('query' => $query);
+                $this->load->view("main", $data);
+            }
         }
     }
