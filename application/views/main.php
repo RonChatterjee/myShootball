@@ -48,7 +48,7 @@
     <p align="center">
         <section class="webdesigntuts-workshop">
             <form action="<?php echo base_url();?>index.php/Buy/index<?php echo $query->row()->id?>" method="POST">
-                <input type="number" min="<?php echo $query->row()->price; ?>" name="pri" placeholder="Final Price...">
+                <input type="number" min="<?php echo $query->row()->price; ?>" name="pri" placeholder="Final Price..." required>
                 <button>Buy Now</button>
             </form>
         </section>

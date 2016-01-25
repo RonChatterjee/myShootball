@@ -13,7 +13,7 @@ class Bid extends CI_Controller{
         if($query->num_rows()>0)
         {
             foreach ($query->result_array() as $row) {
-                $row_set[] = htmlentities(stripslashes($row['name'])); //build an array
+                 $row_set[] = stripslashes($row['name']);
             }
             echo json_encode($row_set); //format the array into json data
         }
