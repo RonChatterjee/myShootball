@@ -7,7 +7,7 @@ class Result extends CI_Controller{
         {
             $tquery = $this->Shootball_model->get_team($i);
             $captain = $this->Shootball_model->player_point($this->input->post('team'.$i));
-            $data['team'.$i]=$tquery->row()->total_point+$captain;
+            $data['team'.$i]=$tquery->row()->total_point+$captain-($tquery->row()->penalty*10);
         }
         $this->load->view('result',$data);
     }
